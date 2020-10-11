@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="change">
+    <navigator url="pages/change/change" hover-class="navigator-hover">
+      <text>翻译成{{curLang.chs}}</text>
+      <text class="iconfont icon-xiala"></text>
+    </navigator>
+  </view>
+  <view class="input-area">
+
+    <view class="textarea-wrap">
+      <textarea placeholder="请输入要翻译的文本" 
+                value="{{query}}"
+                bindinput="onInput">
+      </textarea>
+      <text class="iconfont icon-cha"  bindtap="toTapClose"  hidden="{{hideClearIcon}}">
+      </text>
+    </view>
+    <view class="text-area">
+      <view class="text-result">
+        <view class="title">译文</view>
+        <textarea></textarea>
+      </view>
+    </view>
+  </view>
+  <view class="copyright" ></view>
+</view>
