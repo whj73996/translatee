@@ -1,2 +1,11 @@
-<!--pages/change/change.wxml-->
-<text>pages/change/change.wxml</text>
+<!--change.wxml-->
+<view class="container">
+<view class="title">翻译成</view>
+  <view class="language"
+        wx:for="{{langList}}" wx:key="index" bindtap="changeCurLang"
+        data-chs="{{item.chs}}" data-lang="{{item.lang}}" data-index="{{index}}"
+        hover-class="view-hover">
+  <text>{{item.chs}}</text>     
+  <text class="iconfont icon-select" wx:if="{{curLang.index===index}}"></text>
+  </view>
+</view>

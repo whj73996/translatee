@@ -27,7 +27,6 @@
   box-sizing: border-box;
   padding: 36rpx ;
   background-color: #fff;
-  padding-right: 50px;
   margin-bottom: 12rpx;
 }
 .textarea-wrap{
@@ -42,6 +41,7 @@
 
 .input-area .iconfont{
   /* border: 1px red solid; */
+  padding-top: 16rpx;
   display: inline-block;
   font-size:22rpx ;
   color: #a3a3a3;

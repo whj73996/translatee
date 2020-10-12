@@ -3,13 +3,11 @@ const util = require('../../utils/util.js')
 
 Page({
   data: {
-    logs: []
+    history: []
   },
-  onLoad: function () {
+  onShow: function () {
     this.setData({
-      logs: (wx.getStorageSync('logs') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
+      history:wx.getStorageSync('history')
     })
   }
 })
